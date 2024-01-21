@@ -23,8 +23,7 @@ return new class extends Migration
             $table->string('code');
             $table->boolean('one_time')->default(true);
             $table->boolean('cancelled')->default(false);
-            $table->string('wagon_number');
-
+            $table->tinyInteger('wagon_number');
             $table->timestamps();
         });
     }
